@@ -1,0 +1,80 @@
+[{
+  "autor": {
+    "name": "Carla",
+    "lastname": ""
+  },
+  "item": {
+    "id": "1",
+    "title": "",
+    "price": {
+      "currency": "",
+      "amount": 2,
+      "decimals": 2
+    },
+    "picture": "",
+    "condition": "",
+    "free_shipping": 100,
+    "sold_quantity": 20,
+    "description": ""
+  }
+},
+{
+  "autor": {
+    "name": "Danilo",
+    "lastname": ""
+  },
+  "item": {
+    "id": "2",
+    "title": "",
+    "price": {
+      "currency": "",
+      "amount": 2,
+      "decimals": 2
+    },
+    "picture": "",
+    "condition": "",
+    "free_shipping": 100,
+    "sold_quantity": 20,
+    "description": ""
+  }
+},
+{
+  "autor": {
+    "name": "Luiz",
+    "lastname": ""
+  },
+  "item": {
+    "id": "3",
+    "title": "",
+    "price": {
+      "currency": "",
+      "amount": 2,
+      "decimals": 2
+    },
+    "picture": "",
+    "condition": "",
+    "free_shipping": 100,
+    "sold_quantity": 20,
+    "description": ""
+  }
+},
+{
+  "autor": {
+    "name": "Angela",
+    "lastname": ""
+  },
+  "item": {
+    "id": "4",
+    "title": "",
+    "price": {
+      "currency": "",
+      "amount": 2,
+      "decimals": 2
+    },
+    "picture": "",
+    "condition": "",
+    "free_shipping": 100,
+    "sold_quantity": 20,
+    "description": ""
+  }
+}]
