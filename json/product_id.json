@@ -25,7 +25,7 @@
   },
   "item": {
     "id": "2",
-    "title": "",
+    "title": "iphone",
     "price": {
       "currency": "",
       "amount": 2,
@@ -35,7 +35,7 @@
     "condition": "",
     "free_shipping": 100,
     "sold_quantity": 20,
-    "description": "iphone"
+    "description": ""
   }
 },
 {
