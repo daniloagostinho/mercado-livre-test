@@ -31,6 +31,7 @@ class Search extends React.Component {
     }, 3000);
   };
   fetchSearchResults = (query) => {
+    console.log('query =>>', query);
     // By default the limit of results is 20
     const searchUrl = `http://localhost:5000/sites/MLA/search?q=${query}`;
     if (this.cancel) {

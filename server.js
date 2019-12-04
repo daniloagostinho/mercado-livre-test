@@ -16,8 +16,12 @@ const id_json = require('./json/product_id.json');
 app.get('/', (req, res) => {
   res.send(id_json);
 });
+const capitalize = (s) => {
+  if (typeof s !== 'string') return ''
+  return s.charAt(0).toUpperCase() + s.slice(1)
+}
 app.get('/sites/MLA/search', (req, res) => {
-  const productResultQuery = product.filter(c => c.item.title === req.query.q);
+  const productResultQuery = product.filter(c => c.item.title.startsWith(capitalize(req.query.q)));
   if(productResultQuery == Array.isArray({})) res.status(404).send('O produto que voce procura nao existe!')
   res.send(productResultQuery);
 });
