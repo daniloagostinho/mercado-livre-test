@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 });
 app.get('/sites/MLA/search', (req, res) => {
   const productResultQuery = product.find(c => c.item.title === req.query.q);
-  // if(!productResultQuery) res.status(404).send('O produto que voce procura nao existe!')
+  if(!productResultQuery) res.status(404).send('O produto que voce procura nao existe!')
   res.send(productResultQuery);
 });
 app.get('/items/:id', (req, res) => {
