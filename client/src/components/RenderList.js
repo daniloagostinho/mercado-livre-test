@@ -8,6 +8,7 @@ class RenderList extends React.Component {
     }
   }
   render( ) {
+    console.log(this.props);
     return (
       <h1>Render list component</h1>
     )

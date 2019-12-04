@@ -74,7 +74,7 @@ class Search extends React.Component {
           />
           <i className="fa fa-search search-icon" />
         </label>
-        <RenderList />
+        <RenderList estadoSeach={this.state}/>
       </div>
     )
   }
