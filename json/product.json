@@ -1,0 +1,97 @@
+[
+  {
+    "autor": {
+      "name": "Carla",
+      "lastname": ""
+    },
+    "categories": [
+      "Cama",
+      "Mesa",
+      "Banho"
+    ],
+    "item":
+      {
+        "id": "1",
+        "title": "",
+        "price": {
+          "currency": "",
+          "amount": 2,
+          "decimals": 2
+        },
+        "picture": "",
+        "condition": "",
+        "free_shipping": 100
+      }
+  },
+  {
+    "autor": {
+      "name": "Carla",
+      "lastname": ""
+    },
+    "categories": [
+      "Cama",
+      "Mesa",
+      "Banho"
+    ],
+    "item":
+      {
+        "id": "2",
+        "title": "",
+        "price": {
+          "currency": "",
+          "amount": 2,
+          "decimals": 2
+        },
+        "picture": "",
+        "condition": "",
+        "free_shipping": 100
+      }
+  },
+  {
+    "autor": {
+      "name": "Jose",
+      "lastname": ""
+    },
+    "categories": [
+      "Cama",
+      "Mesa",
+      "Banho"
+    ],
+    "item":
+      {
+        "id": "3",
+        "title": "notebook",
+        "price": {
+          "currency": "",
+          "amount": 2,
+          "decimals": 2
+        },
+        "picture": "",
+        "condition": "",
+        "free_shipping": 100
+      }
+  },
+  {
+    "autor": {
+      "name": "Carla",
+      "lastname": ""
+    },
+    "categories": [
+      "Cama",
+      "Mesa",
+      "Banho"
+    ],
+    "item": {
+      "id": "",
+      "title": "iphone",
+      "price": {
+        "currency": "",
+        "amount": 2,
+        "decimals": 2
+      },
+      "picture": "",
+      "condition": "",
+      "free_shipping": 100
+    }
+  }
+]
