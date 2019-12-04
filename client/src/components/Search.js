@@ -1,6 +1,7 @@
 import React from 'react';
 import './Search.css';
 import axios from 'axios';
+import RenderList from './RenderList';
 class Search extends React.Component {
   constructor(props) {
     super(props);
@@ -37,11 +38,12 @@ class Search extends React.Component {
         cancelToken: this.cancel.token,
       })
       .then((res) => {
+        debugger;
         const resultNotFoundMsg = !res.data.hits.length
           ? 'There are no more search results. Please try a new search.'
           : '';
         this.setState({
-          results: res.data.hits,
+          results: res.data,
           message: resultNotFoundMsg,
           loading: false,
         });
@@ -67,8 +69,8 @@ class Search extends React.Component {
 					/>
 					<i className="fa fa-search search-icon"/>
 				</label>
-
-			</div>
+        <RenderList />
+      </div>
     )
   }
 }
