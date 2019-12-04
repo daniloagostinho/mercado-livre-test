@@ -10,6 +10,8 @@
     "express": "^4.16.2"
   },
   "devDependencies": {
-    "concurrently": "^3.5.0"
+    "body-parser": "^1.19.0",
+    "concurrently": "^3.5.0",
+    "nodemon": "^2.0.1"
   }
 }
