@@ -14,28 +14,25 @@ class Search extends React.Component {
     }
     this.cancel = '';
     this.handleOnInputChange = this.handleOnInputChange.bind(this);
-    this.timeout =  0;
+    this.timeout = 0;
   }
   handleOnInputChange = (event) => {
     const query = event.target.value;
-    if(this.timeout) clearTimeout(this.timeout);
+    //search function
+    if (!query) {
+      this.setState({ query, results: {}, message: '' });
+    } else {
+      this.setState({ query, loading: true, message: '' }, () => {
+      });
+    }
+    if (this.timeout) clearTimeout(this.timeout);
     this.timeout = setTimeout(() => {
-      //search function
-      if (!query) {
-        this.setState({ query, results: {}, message: '' });
-      } else {
-        this.setState({ query, loading: true, message: '' }, () => {
-          this.fetchSearchResults(query);
-        });
-      }
-    }, 3000);
+      this.fetchSearchResults(query);
+    }, 1000);
   };
   fetchSearchResults = (query) => {
-    console.log('query =>>', query);
-    // By default the limit of results is 20
     const searchUrl = `http://localhost:5000/sites/MLA/search?q=${query}`;
     if (this.cancel) {
-      // Cancel the previous request before making a new request
       this.cancel.cancel();
     }
     // Create a new CancelToken
@@ -75,7 +72,7 @@ class Search extends React.Component {
           />
           <i className="fa fa-search search-icon" />
         </label>
-        <RenderList estadoSeach={this.state}/>
+        <RenderList estadoSeach={this.state} />
       </div>
     )
   }

@@ -1,5 +1,7 @@
 import React from 'react';
 import './RenderList.css';
+
+import Loader from '../loader2.png';
 class RenderList extends React.Component {
   constructor(props) {
     super(props);
@@ -8,7 +10,8 @@ class RenderList extends React.Component {
     }
   }
   renderSearchResults = () => {
-    const { results } = this.props.estadoSeach;
+    let { results } = this.props.estadoSeach;
+    // verificar se camp =o esta vazeio e limpar results
     if (Object.keys(results).length && results.length) {
       return (
         <div className="results-container">
@@ -27,14 +30,12 @@ class RenderList extends React.Component {
     }
   };
   render() {
-    console.log(this.props);
-    const { results } = this.props.estadoSeach;
-    console.log(results);
     return (
       <div>
         {this.renderSearchResults()}
         <p>{this.props.estadoSeach.message}</p>
-
+        <h2> {this.props.estadoSeach.loading}</h2>
+        <img src={Loader} className={`search-loading ${this.props.estadoSeach.loading ? 'show' : 'hide' }`}  alt="loader"/>
       </div>
     )
   }
