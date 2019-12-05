@@ -1,3 +1,8 @@
 img.image {
   width: 20%;
 }
+.message-search {
+    position: absolute;
+    top: 32px;
+    color: green;
+}
