@@ -11,7 +11,10 @@ class RenderList extends React.Component {
   }
   renderSearchResults = () => {
     let { results } = this.props.estadoSeach;
-    if (Object.keys(results).length && results.length) {
+    if (this.props.estadoSeach.isEmpty) {
+      results = "";
+    }
+    if (Object.keys(results).length && results.length > 0) {
       return (
         <div className="results-container">
           {results.map((result) => {
@@ -34,7 +37,7 @@ class RenderList extends React.Component {
         {this.renderSearchResults()}
         <p>{this.props.estadoSeach.message}</p>
         <h2> {this.props.estadoSeach.loading}</h2>
-        <img src={Loader} className={`search-loading ${this.props.estadoSeach.loading ? 'show' : 'hide' }`}  alt="loader"/>
+        <img src={Loader} className={`search-loading ${this.props.estadoSeach.loading ? 'show' : 'hide'}`} alt="loader" />
       </div>
     )
   }

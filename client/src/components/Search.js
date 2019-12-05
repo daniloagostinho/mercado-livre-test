@@ -10,6 +10,7 @@ class Search extends React.Component {
       query: '',
       results: {},
       loading: false,
+      isEmpty: false,
       message: '',
     }
     this.cancel = '';
@@ -18,17 +19,24 @@ class Search extends React.Component {
   }
   handleOnInputChange = (event) => {
     const query = event.target.value;
-    //search function
-    if (!query) {
-      this.setState({ query, results: {}, message: '' });
-    } else {
-      this.setState({ query, loading: true, message: '' }, () => {
-      });
+    if (query.length > 0) {
+      //search function
+      if (!query) {
+        this.setState({ query, results: {}, message: '' });
+      } else {
+        this.setState({ query, loading: true, message: '' }, () => {
+        });
+      }
+      if (this.timeout) clearTimeout(this.timeout);
+      this.timeout = setTimeout(() => {
+        this.fetchSearchResults(query);
+      }, 1000);
     }
-    if (this.timeout) clearTimeout(this.timeout);
-    this.timeout = setTimeout(() => {
-      this.fetchSearchResults(query);
-    }, 1000);
+    if(query.length === 0) {
+      this.setState({isEmpty: true})
+    } else if(query.length > 0) {
+      this.setState({isEmpty: false})
+    }
   };
   fetchSearchResults = (query) => {
     const searchUrl = `http://localhost:5000/sites/MLA/search?q=${query}`;
