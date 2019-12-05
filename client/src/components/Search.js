@@ -1,6 +1,7 @@
 import React from 'react';
 import './Search.css';
 import axios from 'axios';
+import RenderList from './RenderList';
 class Search extends React.Component {
   constructor(props) {
     super(props);
@@ -9,25 +10,29 @@ class Search extends React.Component {
       query: '',
       results: {},
       loading: false,
-      message: ''
+      message: '',
     }
     this.cancel = '';
+    this.handleOnInputChange = this.handleOnInputChange.bind(this);
+    this.timeout = 0;
   }
   handleOnInputChange = (event) => {
     const query = event.target.value;
-    if ( ! query ) {
-      this.setState({ query, results: {}, message: '' } );
+    //search function
+    if (!query) {
+      this.setState({ query, results: {}, message: '' });
     } else {
       this.setState({ query, loading: true, message: '' }, () => {
-        this.fetchSearchResults(query);
       });
     }
+    if (this.timeout) clearTimeout(this.timeout);
+    this.timeout = setTimeout(() => {
+      this.fetchSearchResults(query);
+    }, 1000);
   };
-  fetchSearchResults = (query ) => {
-    // By default the limit of results is 20
+  fetchSearchResults = (query) => {
     const searchUrl = `http://localhost:5000/sites/MLA/search?q=${query}`;
     if (this.cancel) {
-      // Cancel the previous request before making a new request
       this.cancel.cancel();
     }
     // Create a new CancelToken
@@ -37,11 +42,11 @@ class Search extends React.Component {
         cancelToken: this.cancel.token,
       })
       .then((res) => {
-        const resultNotFoundMsg = !res.data.hits.length
-          ? 'There are no more search results. Please try a new search.'
+        const resultNotFoundMsg = !res.data
+          ? this.res.error
           : '';
         this.setState({
-          results: res.data.hits,
+          results: res.data,
           message: resultNotFoundMsg,
           loading: false,
         });
@@ -50,25 +55,25 @@ class Search extends React.Component {
         if (axios.isCancel(error) || error) {
           this.setState({
             loading: false,
-            message: 'Failed to fetch results.Please check network',
+            message: error.response.data,
           });
         }
       });
   };
-  render( ) {
+  render() {
     return (
       <div className="container">
-				<label className="search-label" htmlFor="search-input">
-					<input
-						type="text"
-						id="search-input"
+        <label className="search-label" htmlFor="search-input">
+          <input
+            type="text"
+            id="search-input"
             placeholder="Nunca deixe de buscar"
             onChange={this.handleOnInputChange}
-					/>
-					<i className="fa fa-search search-icon"/>
-				</label>
-
-			</div>
+          />
+          <i className="fa fa-search search-icon" />
+        </label>
+        <RenderList estadoSeach={this.state} />
+      </div>
     )
   }
 }
