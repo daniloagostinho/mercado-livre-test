@@ -11,7 +11,6 @@ class RenderList extends React.Component {
   }
   renderSearchResults = () => {
     let { results } = this.props.estadoSeach;
-    // verificar se camp =o esta vazeio e limpar results
     if (Object.keys(results).length && results.length) {
       return (
         <div className="results-container">
