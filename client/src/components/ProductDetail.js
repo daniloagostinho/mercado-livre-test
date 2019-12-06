@@ -2,7 +2,6 @@ import React from 'react';
 import './RenderList.css';
 import axios from 'axios';
 
-import Detail from './Detail';
 
 class ProductDetail extends React.Component {
   constructor(props) {
@@ -47,12 +46,12 @@ class ProductDetail extends React.Component {
   }
 
   render() {
-    console.log(this.state.loading);
     return (
       <div>
         <h1>{this.props.match.params.productId}</h1>
         <h1>{this.state.loading}</h1>
-        <Detail productDetailState={this.state}/>
+        {JSON.stringify(this.state)}
+        <img src={JSON.stringify(this.state.results.item)} alt />
       </div>
     )
   }
