@@ -32,13 +32,13 @@ entre na pasta do projeto
 npm i
 ``
 
-Entre na pasta da aplicação client-side **client/** e também instale as dependências
+Entre na pasta da aplicação client-side **cd client/** e também instale as dependências
 
 `` 
 npm i
 ``
 
-volte para pasta raiz **cd..** pronto agora podemos rodar a aplicação.
+volte para pasta raiz **cd..** pronto agora, podemos rodar a aplicação.
 
 ## Rodando a aplicação
 
@@ -47,3 +47,9 @@ Foi criado um script único para rodar tanto o client quanto o backend. Para vis
 ``
 npm run dev
 ``
+Será aberto automaticamente o navegador com o teste no endereço **http://localhost:3000/**
+
+
+
+
+Qualquer dúvida favor entrar em contato comigo através do meu e-mail: **danilodev.silva@gmail.com**
