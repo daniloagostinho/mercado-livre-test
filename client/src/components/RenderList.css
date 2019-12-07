@@ -1,8 +1,39 @@
-img.image {
-  width: 20%;
-}
 .message-search {
     position: absolute;
     top: 32px;
     color: green;
+}
+
+/* .image-wrapper {
+  background-color: ;
+  margin: 20px;
+  height: 173px;
+  width: 90%;
+} */
+
+.image-wrapper {
+  padding: 10px;
+  margin: 1px;
+  width: 90%;
+  background-color: #fff;
+  height: 200px;
+}
+h3,
+p {
+   margin: 15px 0px 0px;
+   font-family: 'Montserrat', sans-serif;
+}
+p {
+  font-size: 19px;
+}
+.right {
+  float: right;
+  margin-right: 10px;
+}
+
+img.image {
+  width: 20%;
+  height: 100%;
+  float: left;
+  padding-right: 10px;
 }

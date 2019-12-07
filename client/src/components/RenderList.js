@@ -20,11 +20,10 @@ class RenderList extends React.Component {
           {results.map((result) => {
             return (
               <div className="image-wrapper">
-              <Link to={`/items/${result.item.id}`}>aqui</Link>
+                <Link to={`/items/${result.item.id}`}><img className="image" src={result.item.picture} alt={result.user} /></Link>
                 <h3>{result.item.price.currency} {result.item.price.decimals}</h3>
-                <h4>{result.item.title}</h4>
-                <img className="image" src={result.item.picture} alt={result.user} />
-                </div>
+                <p>{result.item.title}</p>
+              </div>
             );
           })}
         </div>
