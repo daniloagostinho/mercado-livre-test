@@ -1,0 +1,14 @@
+body {
+  background-color: #eee;
+  font-family: 'Montserrat', sans-serif;
+
+  &::before {
+    content: "";
+    background: #ffe600;
+    width: 100%;
+    display: block;
+    height: 60px;
+    position: absolute;
+  }
+
+}

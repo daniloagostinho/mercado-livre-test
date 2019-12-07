@@ -1,9 +1,8 @@
 import React from 'react';
-import './RenderList.css';
+import './DetailStyle.scss';
 import axios from 'axios';
 
 
-import './DetailStyle.css';
 import LogoMeli from '../Logo_ML.png';
 
 import Search from './Search';
@@ -73,9 +72,9 @@ class ProductDetail extends React.Component {
 
           <div className="detail-right">
             <p>{(this.state.results.item || {}).condition} -
-            {(this.state.results.item || {}).sold_quanti} vendidos</p>
+            {(this.state.results.item || {}).sold_quantity} vendidos</p>
             <p className="subtite">{(this.state.results.item || {}).title}</p>
-            <p class="price">
+            <p className="price">
             {((this.state.results.item || {}).price || {}).currency}
             {((this.state.results.item || {}).price || {}).decimals}</p>
             <button className="button-buy">Comprar</button>

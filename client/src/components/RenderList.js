@@ -1,5 +1,5 @@
 import React from 'react';
-import './RenderList.css';
+import './RenderList.scss';
 
 
 import { Link } from "react-router-dom";
@@ -13,13 +13,12 @@ class RenderList extends React.Component {
   }
   renderSearchResults = () => {
     let { results } = this.props.estadoSeach;
-    console.log('categorias >>', ((results.results || {}).categories || []) )
     if (Object.keys(results).length && results.length > 0) {
       return (
         <div className="results-container">
           {(results.categories || []).map((categorie) =>
             <ul className="menu">
-              <li key={JSON.stringify(categorie)}>
+              <li key={categorie}>
               </li>
             </ul>
           )}
@@ -30,9 +29,9 @@ class RenderList extends React.Component {
                 {result.item.free_shipping &&
                   <img className="car-mail-img" src={PostManImail} alt={result.user} />
                 }
-                <p class="price-tag">{result.item.price.currency} {result.item.price.decimals}</p>
+                <p className="price-tag">{result.item.price.currency} {result.item.price.decimals}</p>
                 <p>{result.item.title}</p>
-                <p class="aligth-right">Capital Federal</p>
+                <p className="aligth-right">Capital Federal</p>
               </div>
             );
           })}
