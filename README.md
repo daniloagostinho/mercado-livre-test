@@ -21,14 +21,14 @@ O backend está acomplado a aplicação, o que significa que rodando um único c
 
 Clone este projeto
 
-``bash 
+`` 
 git clone git@github.com:daniloagostinho/mercado-livre-test.git
 ``
 
 entre na pasta do projeto
 **cd mercado-livre-test/** e instale as dependências rodando o comando 
 
-``bash 
+`` 
 npm i
 ``
 
@@ -36,6 +36,6 @@ npm i
 
 Foi criado um script único para rodar tanto o client quanto o backend. Para visualizar o teste em um navegador rode o comando 
 
-``bash 
+``
 npm run dev
 ``
