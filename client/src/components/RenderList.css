@@ -1,22 +1,21 @@
-.message-search {
-    position: absolute;
-    top: 32px;
-    color: green;
+.message-search,
+.loading {
+  color: #333;
+  font-size: 14px;
+  position: absolute;
+  top: 59px;
+  margin-left: 280px;
+  margin-top: 30px;
 }
-
-/* .image-wrapper {
-  background-color: ;
-  margin: 20px;
-  height: 173px;
-  width: 90%;
-} */
 
 .image-wrapper {
   padding: 10px;
-  margin: 1px;
-  width: 90%;
+  margin: 2px 75px;
+  width: 114%;
   background-color: #fff;
   height: 200px;
+  margin-left: -58px;
+  border-radius: 1px;
 }
 h3,
 p {
@@ -24,7 +23,8 @@ p {
    font-family: 'Montserrat', sans-serif;
 }
 p {
-  font-size: 19px;
+  font-size: 16px;
+  max-width: 580px;
 }
 .right {
   float: right;
@@ -32,8 +32,25 @@ p {
 }
 
 img.image {
-  width: 20%;
-  height: 100%;
+  width: 180px;
+  height: 180px;
+  max-width: 100%;
   float: left;
   padding-right: 10px;
+}
+.price-tag {
+  font-size: 22px;
+}
+.aligth-right {
+  float: right;
+  margin: -58px 10px;
+  font-size: 13px;
+}
+
+img.car-mail-img {
+  right: 869px;
+  width: 20px;
+  float: right;
+  margin-right: 620px;
+  margin-top: 19px;
 }

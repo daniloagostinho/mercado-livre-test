@@ -3,6 +3,10 @@ import './RenderList.css';
 import axios from 'axios';
 
 
+import './DetailStyle.css';
+import LogoMeli from '../Logo_ML.png';
+
+import Search from './Search';
 class ProductDetail extends React.Component {
   constructor(props) {
     super(props);
@@ -48,14 +52,41 @@ class ProductDetail extends React.Component {
   render() {
     return (
       <div>
-        {JSON.stringify(this.state)}
-        <img src={(this.state.results.item || {}).picture} />
-        <p>{(this.state.results.item || {}).condition}
-         - vendidos</p>
+        <div className="container">
+          <label className="search-label" htmlFor="search-input">
+            <img className="logo-meli" src={LogoMeli} />
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Nunca deixe de buscar"
+              onChange={this.handleOnInputChange}
+            />
+          </label>
+          <button className="button-submit"></button>
+          <i className="fa fa-search search-icon" />
+        </div>
+        <div className="container-detail">
 
-        <h4>Descricao do produto</h4>
-        <p>{(this.state.results.item || {}).description}</p>
-        <button>Comprar</button>
+          <div className="box-img">
+            <img src={(this.state.results.item || {}).picture} alt={(this.state.results.item || {}).title} />
+          </div>
+
+          <div className="detail-right">
+            <p>{(this.state.results.item || {}).condition} -
+            {(this.state.results.item || {}).sold_quanti} vendidos</p>
+            <p className="subtite">{(this.state.results.item || {}).title}</p>
+            <p class="price">
+            {((this.state.results.item || {}).price || {}).currency}
+            {((this.state.results.item || {}).price || {}).decimals}</p>
+            <button className="button-buy">Comprar</button>
+          </div>
+
+          <div className="box-description">
+            <h4>Descricao do produto</h4>
+            <p>{(this.state.results.item || {}).description}</p>
+          </div>
+
+        </div>
       </div>
     )
   }
