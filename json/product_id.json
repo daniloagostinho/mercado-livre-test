@@ -25,17 +25,17 @@
   },
   "item": {
     "id": "2",
-    "title": "iphone",
+    "title": "Apple iPod Touch 5 Apple 32gb Amarelo Caixa Parcela Kf4jr ( Leia )",
     "price": {
-      "currency": "",
-      "amount": 2,
-      "decimals": 2
+      "currency": "R$",
+      "amount": 40,
+      "decimals": 739
     },
-    "picture": "",
+    "picture": "https://http2.mlstatic.com/ipod-touch-5-apple-32gb-amarelo-caixa-parcela-kf4jr-leia--D_NQ_NP_780549-MLB32134751736_092019-F.webp",
     "condition": "",
     "free_shipping": 100,
     "sold_quantity": 20,
-    "description": ""
+    "description": "Desenvolvido com material leve em alumínio, possui apenas 6,1 mm e 88 gramas. Sua tela touch permite uma visualização mais nítida de suas imagens, vídeos e apps. Com a câmera iSight de 5 megapixel, suas fotos serão de uma grande nitidez e cores incríveis. Você poderá também, gravar vídeos em HD de 1080p."
   }
 },
 {

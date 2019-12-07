@@ -1,3 +1,4 @@
+
 [
   {
     "autor": {
@@ -67,8 +68,8 @@
           "amount": 2,
           "decimals": 229
         },
-        "picture": "",
-        "condition": "https://http2.mlstatic.com/ipod-touch-apple-8gb-mc540ea-a1367-pronta-entrega-oferta-D_NQ_NP_644394-MLB32316167870_092019-F.webp",
+        "picture": "https://http2.mlstatic.com/ipod-touch-5-geraco-16gb-apple-5th-cinza-parcelado-yg22y-D_NQ_NP_638981-MLB32588845072_102019-F.webp",
+        "condition": "Novo",
         "free_shipping": false
       }
   },

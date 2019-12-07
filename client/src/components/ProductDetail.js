@@ -2,6 +2,7 @@ import React from 'react';
 import './RenderList.css';
 import axios from 'axios';
 
+
 class ProductDetail extends React.Component {
   constructor(props) {
     super(props);
@@ -47,7 +48,14 @@ class ProductDetail extends React.Component {
   render() {
     return (
       <div>
-        <h1>{this.props.match.params.productId}</h1>
+        {JSON.stringify(this.state)}
+        <img src={(this.state.results.item || {}).picture} />
+        <p>{(this.state.results.item || {}).condition}
+         - vendidos</p>
+
+        <h4>Descricao do produto</h4>
+        <p>{(this.state.results.item || {}).description}</p>
+        <button>Comprar</button>
       </div>
     )
   }
