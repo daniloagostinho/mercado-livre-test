@@ -15,7 +15,7 @@ O backend está acomplado a aplicação, o que significa que rodando um único c
 
 ## Pré-requisitos
 
-- Node >= 6;
+- Node >= 6.
 
 ## Instalação 
 
