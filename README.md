@@ -47,9 +47,7 @@ Foi criado um script único para rodar tanto o client quanto o backend. Para vis
 ``
 npm run dev
 ``
+
 Será aberto automaticamente o navegador com o teste no endereço **http://localhost:3000/**
-
-
-
 
 Qualquer dúvida favor entrar em contato comigo através do meu e-mail: **danilodev.silva@gmail.com**
