@@ -22,12 +22,12 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: #eee;
   font-family: 'Montserrat', sans-serif;
 }
 body::before {
   content: "";
-  background: yellow;
+  background: #ffe600;
   width: 100%;
   display: block;
   height: 60px;

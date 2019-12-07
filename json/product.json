@@ -1,4 +1,5 @@
 
+
 [
   {
     "autor": {
@@ -93,7 +94,7 @@
       },
       "picture": "https://http2.mlstatic.com/ipod-touch-16-gb-5a-geraco-com-cmera-D_NQ_NP_684424-MLB32680656955_102019-F.webp",
       "condition": "Usado",
-      "free_shipping": false
+      "free_shipping": true
     }
   }
 ]
