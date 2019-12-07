@@ -10,7 +10,7 @@ Código do projeto de teste para vaga de Desenvolvedor Front-end do Mercado Livr
 - React - aplicação single page.
 
 ## Arquitetura
-O backend está acoplado a aplicação, o que significa que rodando um único comando, teremos os servidores client e backend rodando simultanemente. 
+O backend está acoplado a aplicação, o que significa que com um único comando teremos os servidores client e backend rodando simultanemente. 
 
 
 ## Pré-requisitos
