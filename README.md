@@ -50,4 +50,9 @@ npm run dev
 
 Será aberto automaticamente o navegador com o teste no endereço **http://localhost:3000/**
 
+### Preview
+
+<img src="https://raw.githubusercontent.com/daniloagostinho/mercado-livre-test/feature/create-readme/preview%20teste.png"/>
+
+
 Qualquer dúvida favor entrar em contato comigo através do meu e-mail: **danilodev.silva@gmail.com**
