@@ -1,0 +1,81 @@
+[{
+  "autor": {
+    "name": "Carla",
+    "lastname": " Silva"
+  },
+  "item": {
+    "id": "1",
+    "title": "Apple iPod Touch 5 16gb Prata A1509 (sem Câmera) Parcelado - Leia",
+    "price": {
+      "currency": "R$ ",
+      "amount": 4,
+      "decimals": 879
+    },
+    "picture": "https://http2.mlstatic.com/ipod-touch-5-16gb-prata-a1509-sem-cmera-parcelado-leia-D_NQ_NP_855567-MLB31830770699_082019-O.webp",
+    "condition": "Usado ",
+    "free_shipping": true,
+    "sold_quantity": 200,
+    "description": "iPod Touch 5 geração 16GB - A1509 (modelo sem câmera traseira) O iOS dessa geração parou de ser atualizado na versão 9.3.5, portanto a última versão de diversos apps já não é mais compatível com ele."
+  }
+},
+{
+  "autor": {
+    "name": "Carla",
+    "lastname": "Montero"
+  },
+  "item": {
+    "id": "2",
+    "title": "Apple iPod Touch 5 Apple 32gb Amarelo Caixa Parcela Kf4jr ( Leia )",
+    "price": {
+      "currency": "R$ ",
+      "amount": 40,
+      "decimals": 739
+    },
+    "picture": "https://http2.mlstatic.com/ipod-touch-4ta-geracao-32-gb-completo-na-caixa-funcionando-D_NQ_NP_976278-MLB26869045610_022018-W.webp",
+    "condition": "Usado ",
+    "free_shipping": false,
+    "sold_quantity": 20,
+    "description": "Desenvolvido com material leve em alumínio, possui apenas 6,1 mm e 88 gramas. Sua tela touch permite uma visualização mais nítida de suas imagens, vídeos e apps. Com a câmera iSight de 5 megapixel, suas fotos serão de uma grande nitidez e cores incríveis. Você poderá também, gravar vídeos em HD de 1080p."
+  }
+},
+{
+  "autor": {
+    "name": "Jose",
+    "lastname": "souza"
+  },
+  "item": {
+    "id": "3",
+    "title": "Apple iPod Touch Apple 8gb/ Mc540e/a A1367 Pronta Entrega! Oferta",
+    "price": {
+      "currency": "R$ ",
+      "amount": 2,
+      "decimals": 229
+    },
+    "picture": "https://http2.mlstatic.com/ipod-touch-5-geraco-16gb-apple-5th-cinza-parcelado-yg22y-D_NQ_NP_638981-MLB32588845072_102019-F.webp",
+    "condition": "Usado ",
+    "free_shipping": true,
+    "sold_quantity": 20,
+    "description": "Versão do iOS: 9.3.5 (último possível para este modelo, portanto, alguns apps já não são mais compatíveis)."
+  }
+},
+{
+  "autor": {
+    "name": "Raphaella",
+    "lastname": "Silva"
+  },
+  "item": {
+    "id": "4",
+    "title": "Apple iPod Touch 16 Gb 5a Geração Com Câmera",
+    "price": {
+      "currency": "R$ ",
+      "amount": 2,
+      "decimals": 900
+    },
+    "picture": "https://http2.mlstatic.com/ipod-touch-16-gb-5a-geraco-com-cmera-D_NQ_NP_684424-MLB32680656955_102019-F.webp",
+    "condition": "Usado ",
+    "free_shipping": false,
+    "sold_quantity": 20,
+    "description": "5a geração - Modelo A1509. Produto na caixa, nunca foi usado. Preço sujeito a negociação!"
+  }
+}
+]

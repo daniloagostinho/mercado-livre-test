@@ -1,0 +1,43 @@
+.container-detail {
+  width: 64%;
+  background: #fff;
+  margin: 0 auto;
+  padding: 20px;
+
+  .box-img img {
+    width: 60%;
+  }
+
+  .detail-right {
+    float: right;
+    position: absolute;
+    top: 110px;
+    right: 267px;
+  }
+
+  .box-description p {
+    max-width: 540px;
+  }
+
+  .button-buy {
+    background: #3483fa;
+    width: 200px;
+    padding: 11px;
+    margin-top: 11px;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .subtite {
+    font-size: 20px;
+    max-width: 216px;
+    font-weight: bold;
+  }
+
+  p.price {
+    font-size: 44px;
+    margin: 0;
+  }
+}

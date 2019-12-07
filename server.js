@@ -1,26 +1,23 @@
 const express = require('express');
 
 const app = express();
+var cors = require('cors');
+app.use(cors({
+  credentials: true,
+}));
 const port = process.env.PORT || 5000;
 
-const id_json = require('./json/id_json.json')
-const produtos = [
-  {id: 1, nome: 'cafeteira'},
-  {id: 2, nome: 'fruteira'}
-]
+const routes =  require('./routes/routes');
 
-app.get('/', (req, res) => {
-  res.send(id_json);
-});
+app.use(routes);
 
-app.get('/items/:id', (req, res) => {
-  const productResult = id_json.find(c => Number(c.item.id) === Number(req.params.id));
-  if(!productResult) res.status(404).send('O produto que voce procura nao existe!')
-  res.send(productResult);
-});
+app.use((req, res, next) => {
+  res.setHeader('Acess-Control-Allow-Origin', '*');
+  res.setHeader('Acess-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.setHeader('Acess-Control-Allow-Headers', 'X-Requested-With, content-type');
+  res.setHeader('Acess-Control-Allow-Credentials', true);
 
-app.get('/items/:id/description', (req, res) => {
-  res.send(id_json);
-});
+  next();
+})
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
