@@ -53,7 +53,7 @@ class ProductDetail extends React.Component {
       <div>
         <div className="container">
           <label className="search-label" htmlFor="search-input">
-            <img className="logo-meli" src={LogoMeli} />
+            <img className="logo-meli" src={LogoMeli} alt="Logo Mercado Livre"/>
             <input
               type="text"
               id="search-input"
@@ -67,7 +67,7 @@ class ProductDetail extends React.Component {
         <div className="container-detail">
 
           <div className="box-img">
-            <img src={(this.state.results.item || {}).picture} alt={(this.state.results.item || {}).title} />
+            <img src={(this.state.results.item || {}).picture} alt={(this.state.results.item || {}).title} alt="Detalhe dos produtos mercado livre"/>
           </div>
 
           <div className="detail-right">

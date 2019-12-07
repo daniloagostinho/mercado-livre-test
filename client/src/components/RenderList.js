@@ -25,7 +25,7 @@ class RenderList extends React.Component {
           {results.map((result) => {
             return (
               <div className="image-wrapper">
-                <Link to={`/items/${result.item.id}`}><img className="image" src={result.item.picture} alt={result.user} /></Link>
+                <Link to={`/items/${result.item.id}`}><img className="image" src={result.item.picture} alt={result.item.title} /></Link>
                 {result.item.free_shipping &&
                   <img className="car-mail-img" src={PostManImail} alt={result.user} />
                 }
