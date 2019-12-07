@@ -9,11 +9,11 @@ Código do projeto de teste para vaga de Desenvolvedor Front-end do Mercado Livr
 - Node Express (Backend)
 - React - aplicação single page.
 
-## Arquiterura
+## Arquitetura
 O backend está acomplado a aplicação, o que significa que rodando um único comando, teremos os servidores client e backend rodando simultanemente. 
 
 
-## Pré-requisitos de instação
+## Pré-requisitos
 
 - Node >= 6;
 
@@ -26,11 +26,19 @@ git clone git@github.com:daniloagostinho/mercado-livre-test.git
 ``
 
 entre na pasta do projeto
-**cd mercado-livre-test/** e instale as dependências rodando o comando 
+**cd mercado-livre-test/** e instale as dependências da api backend.
 
 `` 
 npm i
 ``
+
+Entre na pasta da aplicação client-side **client/** e também instale as dependências
+
+`` 
+npm i
+``
+
+volte para pasta raiz **cd..** pronto agora podemos rodar a aplicação.
 
 ## Rodando a aplicação
 
