@@ -2,6 +2,9 @@ import React from 'react';
 import './Search.css';
 import axios from 'axios';
 import RenderList from './RenderList';
+
+import LogoMeli from '../Logo_ML.png';
+
 class Search extends React.Component {
   constructor(props) {
     super(props);
@@ -72,14 +75,16 @@ class Search extends React.Component {
     return (
       <div className="container">
         <label className="search-label" htmlFor="search-input">
+        <img className="logo-meli" src={LogoMeli} />
           <input
             type="text"
             id="search-input"
             placeholder="Nunca deixe de buscar"
             onChange={this.handleOnInputChange}
           />
-          <i className="fa fa-search search-icon" />
         </label>
+        <button className="button-submit"></button>
+        <i className="fa fa-search search-icon" />
         <RenderList estadoSeach={this.state} />
       </div>
     )
