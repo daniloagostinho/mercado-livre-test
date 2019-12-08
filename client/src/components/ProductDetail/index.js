@@ -1,11 +1,10 @@
 import React from 'react';
-import './DetailStyle.scss';
+import './styles.scss';
 import axios from 'axios';
 
 
-import LogoMeli from '../Logo_ML.png';
+import LogoMeli from '../../Logo_ML.png';
 
-import Search from './Search';
 class ProductDetail extends React.Component {
   constructor(props) {
     super(props);

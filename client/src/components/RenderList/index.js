@@ -1,9 +1,9 @@
 import React from 'react';
-import './RenderList.scss';
+import './styles.scss';
 
 
 import { Link } from "react-router-dom";
-import PostManImail from '../car_mail.png';
+import PostManImail from '../../car_mail.png';
 class RenderList extends React.Component {
   constructor(props) {
     super(props);
@@ -15,7 +15,7 @@ class RenderList extends React.Component {
     let { results } = this.props.estadoSeach;
     const categories = ["Eletrônicos, Áudio e Vídeo ", "Ipod ", "Áudio Portátil ", "Reprodutores ", "iPod touch", "32 GB"].join(' > ').split(' .');
     const listItems = categories.map((cat) =>
-      <li>{cat}</li>
+      <li key={cat}>{cat}</li>
     );
     if (Object.keys(results).length && results.length > 0) {
       return (
@@ -23,7 +23,7 @@ class RenderList extends React.Component {
           <ul>{listItems} </ul>
           {results.map((result) => {
             return (
-              <div className="image-wrapper">
+              <div key={result.item.id} className="image-wrapper">
                 <Link to={`/items/${result.item.id}`}><img className="image" src={result.item.picture} alt={result.item.title} /></Link>
                 {result.item.free_shipping &&
                   <img className="car-mail-img" src={PostManImail} alt={result.user} />
