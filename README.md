@@ -56,7 +56,7 @@ Será aberto automaticamente o navegador com o teste no endereço **http://local
 
 ### Extra
 
-- Para o controle de criação de branch foi utilizado o Git Flow.
+- Para o controle de criação de branch foi utilizado o Git Flow. O historico das branchs pode ser encontrado clicando <a href="https://github.com/daniloagostinho/mercado-livre-test/pulls?q=is%3Apr+author%3Adaniloagostinho+is%3Aclosed">aqui</a>;
 - O projeto possui meta tags de relevância SEO;
 - O css foi escrito com o pré-processador SASS para ser escalável.
  
