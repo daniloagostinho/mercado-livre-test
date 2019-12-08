@@ -1,9 +1,9 @@
 import React from 'react';
-import './Search.scss';
+import './styles.scss';
 import axios from 'axios';
-import RenderList from './RenderList';
+import RenderList from '../RenderList';
 
-import LogoMeli from '../Logo_ML.png';
+import LogoMeli from '../../Logo_ML.png';
 
 class Search extends React.Component {
   constructor(props) {
