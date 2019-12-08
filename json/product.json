@@ -32,9 +32,10 @@
       "lastname": "Montero"
     },
     "categories": [
-      "Cama",
-      "Mesa",
-      "Banho"
+      "Eletrônicos, Áudio e Vídeo",
+      "Áudio",
+      "Áudio Portátil",
+      "iPod"
     ],
     "item":
       {
@@ -56,9 +57,10 @@
       "lastname": "souza"
     },
     "categories": [
-      "Cama",
-      "Mesa",
-      "Banho"
+      "Eletrônicos, Áudio e Vídeo",
+      "Áudio",
+      "Áudio Portátil",
+      "iPod"
     ],
     "item":
       {
@@ -80,9 +82,10 @@
       "lastname": "Silva"
     },
     "categories": [
-      "Cama",
-      "Mesa",
-      "Banho"
+      "Eletrônicos, Áudio e Vídeo",
+      "Áudio",
+      "Áudio Portátil",
+      "iPod"
     ],
     "item": {
       "id": "4",
