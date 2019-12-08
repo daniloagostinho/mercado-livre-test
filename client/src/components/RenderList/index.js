@@ -3,7 +3,7 @@ import './RenderList.scss';
 
 
 import { Link } from "react-router-dom";
-import PostManImail from '../car_mail.png';
+import PostManImail from '../../car_mail.png';
 class RenderList extends React.Component {
   constructor(props) {
     super(props);
