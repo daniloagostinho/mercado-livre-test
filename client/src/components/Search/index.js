@@ -1,5 +1,5 @@
 import React from 'react';
-import './Search.scss';
+import './styles.scss';
 import axios from 'axios';
 import RenderList from '../RenderList';
 
