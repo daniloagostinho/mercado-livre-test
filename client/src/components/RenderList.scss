@@ -8,15 +8,18 @@
     margin-left: -58px;
     border-radius: 1px;
   }
+
   h3,
   p {
-     margin: 15px 0px 0px;
-     font-family: 'Montserrat', sans-serif;
+    margin: 15px 0px 0px;
+    font-family: 'Montserrat', sans-serif;
   }
+
   p {
     font-size: 16px;
     max-width: 580px;
   }
+
   .right {
     float: right;
     margin-right: 10px;
@@ -29,9 +32,11 @@
     float: left;
     padding-right: 10px;
   }
+
   .price-tag {
     font-size: 22px;
   }
+
   .aligth-right {
     float: right;
     margin: -58px 10px;
@@ -46,7 +51,31 @@
     margin-top: 19px;
   }
 
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-left: -59px;
+    position: relative;
+    top: -10px;
+  }
+
+  li {
+    float: left;
+  }
+
+  li {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+  }
+
 }
+
 .message-search,
 .loading {
   color: #333;
