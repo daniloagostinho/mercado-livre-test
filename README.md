@@ -56,6 +56,8 @@ Será aberto automaticamente o navegador com o teste no endereço **http://local
 
 ### Extra
 
-Para o controle de criação de branch foi utilizado o Git Flow.
+- Para o controle de criação de branch foi utilizado o Git Flow.
+- O projeto possui meta tags de relevância SEO;
+- O css foi escrito com o pré-processador SASS para ser escalável.
  
 Qualquer dúvida favor entrar em contato comigo através do meu e-mail: **danilodev.silva@gmail.com**
