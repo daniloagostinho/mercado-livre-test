@@ -13,15 +13,14 @@ class RenderList extends React.Component {
   }
   renderSearchResults = () => {
     let { results } = this.props.estadoSeach;
+    const categories = ["Eletrônicos, Áudio e Vídeo ", "Ipod ", "Áudio Portátil ", "Reprodutores ", "iPod touch", "32 GB"].join(' > ').split(' .');
+    const listItems = categories.map((cat) =>
+      <li>{cat}</li>
+    );
     if (Object.keys(results).length && results.length > 0) {
       return (
         <div className="results-container">
-          {(results.categories || []).map((categorie) =>
-            <ul className="menu">
-              <li key={categorie}>
-              </li>
-            </ul>
-          )}
+          <ul>{listItems} </ul>
           {results.map((result) => {
             return (
               <div className="image-wrapper">

@@ -54,6 +54,7 @@ class ProductDetail extends React.Component {
         <div className="container">
           <label className="search-label" htmlFor="search-input">
             <img className="logo-meli" src={LogoMeli} alt="Logo Mercado Livre"/>
+
             <input
               type="text"
               id="search-input"
