@@ -54,5 +54,8 @@ Será aberto automaticamente o navegador com o teste no endereço **http://local
 
 <img src="https://raw.githubusercontent.com/daniloagostinho/mercado-livre-test/feature/create-readme/preview.png"/>
 
+### Extra
 
+Para o controle de criação de branch foi utilizado o Git Flow.
+ 
 Qualquer dúvida favor entrar em contato comigo através do meu e-mail: **danilodev.silva@gmail.com**
