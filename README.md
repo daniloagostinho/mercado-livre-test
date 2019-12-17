@@ -15,7 +15,8 @@ O backend está acoplado a aplicação, o que significa que com um único comand
 
 ## Pré-requisitos
 
-- Node >= 6.
+- Node >= 6;
+- node-sass.
 
 ## Instalação 
 
